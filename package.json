@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundlesize": "bundlesize",
+    "bundlewatch": "bundlewatch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,19 @@
   },
   "homepage": "https://github.com/slocka/bundlesize_test#readme",
   "dependencies": {
-    "bundlesize": "^0.18.0"
-  }
+    "bundlesize": "^0.18.0",
+    "bundlewatch": "^0.2.5"
+  },
+  "bundlesize": [
+    {
+      "path": "test.js",
+      "maxSize": "20 kB"
+    }
+  ],
+  "bundlewatch": [
+    {
+      "path": "test.js",
+      "maxSize": "20 kB"
+    }
+  ]
 }
